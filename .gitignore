@@ -1,0 +1,9 @@
+/target
+/.vs
+/.vscode
+/.idea
+Cargo.lock
+**/*.wasm
+/node_modules/
+./package-lock.json
+./package-lock.json

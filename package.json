@@ -1,0 +1,16 @@
+{
+  "name": "template-env-bevy",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build" :  "cargo run",
+    "serve": "akashic serve .",
+    "sandbox": "akashic-sandbox .",
+    "scan": "akashic scan asset"
+  },
+  "author": "",
+  "devDependencies": {
+    "@akashic/akashic-cli": "^2.16.45",
+    "@akashic/akashic-sandbox": "^0.24.7"
+  }
+}
