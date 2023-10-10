@@ -1,18 +1,19 @@
-use akashic::game::GAME;
-use bevy::app::{App, PluginGroup};
-use bevy::asset::AssetPlugin;
-use bevy::DefaultPlugins;
-use bevy::utils::default;
+use akashic::font::dynamic::DynamicFontBuilder;
+use akashic::font::font_family::FontFamily;
+use akashic::object2d::Object2D;
+use akashic::prelude::*;
 
 fn main() {
-    App::new()
-        .add_plugins(DefaultPlugins.set(AssetPlugin{
-            asset_folder: format!("{}/assets", GAME.asset_base()),
-            ..default()
-        }))
+    let font = DynamicFontBuilder::new(FontFamily::new("sans-serif"), 31.).build();
+    let label = LabelBuilder::new("Hello World!", font).build();
 
-        .run();
+    let x = GAME.width() * 0.5 - label.width() * 0.5;
+    let y = GAME.height() * 0.5 - label.height() * 0.5;
+    label.move_to(x, y);
+
+    GAME
+        .scene()
+        .append(&label);
 }
-
 
 

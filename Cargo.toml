@@ -1,14 +1,7 @@
 [package]
-name = "template-env-bevy"
+name = "your-project-name"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-bevy = {version = "0.11.3", default-features = false , features = [
-    "bevy_asset",
-    "bevy_core_pipeline",
-    "bevy_render",
-    "webgl2"
-]}
 akashic = { git = "https://github.com/elm-register/akashic", version = "0.1"}
-bevy-akashic = { git = "https://github.com/elm-register/bevy-akashic", version = "0.1" }
