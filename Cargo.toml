@@ -8,7 +8,14 @@ bevy = {version = "0.11.3", default-features = false , features = [
     "bevy_asset",
     "bevy_core_pipeline",
     "bevy_render",
-    "webgl2"
+    "webgl2",
+    "bevy_sprite"
 ]}
-akashic = { git = "https://github.com/elm-register/akashic", version = "0.0.0"}
-bevy-akashic = { git = "https://github.com/elm-register/bevy-akashic", version = "0.0.0" }
+akashic = { git = "https://github.com/elmtw/akashic", version = "0.0.0"}
+bevy-akashic = { git = "https://github.com/elmtw/bevy-akashic", version = "0.0.0", features = ["env_bevy"] }
+
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "z"

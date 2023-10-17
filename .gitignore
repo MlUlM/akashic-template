@@ -3,7 +3,7 @@
 /.vscode
 /.idea
 Cargo.lock
-**/*.wasm
 /node_modules/
-./package-lock.json
-./package-lock.json
+package-lock.json
+/assets/script/main.js
+/assets/script/main_bg.wasm

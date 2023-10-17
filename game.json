@@ -4,11 +4,6 @@
 	"fps": 30,
 	"main": "./assets/script/main.js",
 	"assets": {
-		"assets/script/akashic.js": {
-			"type": "script",
-			"path": "assets/script/akashic.js",
-			"global": true
-		},
 		"assets/script/main.js": {
 			"type": "script",
 			"path": "assets/script/main.js",
@@ -16,7 +11,7 @@
 		},
 		"assets/script/akashic_bg.wasm": {
 			"type": "binary",
-			"path": "assets/script/akashic_bg.wasm"
+			"path": "assets/script/main_bg.wasm"
 		}
 	},
 	"environment": {

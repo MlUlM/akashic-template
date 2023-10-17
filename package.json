@@ -3,14 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build" :  "cargo run",
+    "build": "cargo run",
+    "build:release": "cargo run --release",
     "serve": "akashic serve .",
     "sandbox": "akashic-sandbox .",
-    "scan": "akashic scan asset"
+    "scan": "akashic scan asset",
+    "export-zip": "rimraf game.zip && akashic export zip --nicolive"
   },
   "author": "",
   "devDependencies": {
     "@akashic/akashic-cli": "^2.16.45",
-    "@akashic/akashic-sandbox": "^0.24.7"
+    "@akashic/akashic-sandbox": "^0.24.7",
+    "rimraf": "^5.0.5"
   }
 }
